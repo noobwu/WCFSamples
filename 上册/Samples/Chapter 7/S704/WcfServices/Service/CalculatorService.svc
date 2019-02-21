@@ -1,0 +1,3 @@
+﻿<%@ ServiceHost Factory="Artech.WcfServices.Service.MexServiceHostFactory, Artech.WcfServices.Service"
+                Service ="Artech.WcfServices.Service.CalculatorService, Artech.WcfServices.Service;mex"
+%>

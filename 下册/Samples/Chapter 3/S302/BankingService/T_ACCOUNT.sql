@@ -1,0 +1,10 @@
+﻿IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[T_ACCOUNT]') AND type in (N'U'))
+DROP TABLE [dbo].[T_ACCOUNT]
+GO
+
+CREATE TABLE [dbo].[T_ACCOUNT](
+	[ID]		VARCHAR(50)		PRIMARY KEY,
+	[NAME]		NVARCHAR(50)	NOT NULL,
+	[BALANCE]	FLOAT			NOT NULL)
+	
+GO

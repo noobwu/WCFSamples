@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Service="Artech.TransactionalService.Service.WithdrawService"%>

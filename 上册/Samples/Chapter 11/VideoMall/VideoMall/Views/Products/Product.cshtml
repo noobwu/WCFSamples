@@ -1,0 +1,26 @@
+﻿@using Artech.VideoMall.Products.BusinessEntity
+@model Movie
+<div class="product">
+@{
+    MvcHtmlString htmlString = new MvcHtmlString(Model.Story);    
+}
+  <div class="productInfo">
+    <img src="@Model.Poster"class="poster" alt="@Model.Name" />
+    <span class="title">@Model.Name</span>
+    <span>@Html.LabelFor(m => m.Categogy): @Model.Categogy</span>
+    <span>@Html.LabelFor(m => m.Starring): @Model.Starring</span>
+    <span>@Html.LabelFor(m => m.Director): @Model.Director</span>
+    <span>@Html.LabelFor(m => m.RuningTime): @Model.RuningTime 分钟</span>
+    <span>@Html.LabelFor(m => m.Story): @htmlString</span>    
+   </div>
+   <div class="addToShoppingCart">     
+       @using (Html.BeginForm("AddProductIntoCart", "Orders"))
+       {        
+            <span >@Html.LabelFor(m => m.Price):￥@Model.Price</span>
+            <input type="submit" value="" />
+            @Html.Hidden("productId", Model.Id)
+            @Html.Hidden("price", Model.Price)
+       }
+   </div>
+   <div style="clear:both"/>
+</div>

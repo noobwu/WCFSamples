@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Service="Artech.VideoMall.Infrastructure.Service.SecurityAuditService" Factory="Artech.VideoMall.Common.Extensions.ExceptionHandlingServiceHostFactory, Artech.VideoMall.Common"%>

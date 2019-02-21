@@ -1,0 +1,10 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@{
+    ViewBag.Title = "Error";
+}
+<div class="error">
+    <h3>@this.Model.Exception.Message</h3>
+    <p><b>Exception Type: </b>@this.Model.Exception.GetType()</p>
+    <p><b>StackTrace: </b>@this.Model.Exception.StackTrace</p>
+    <p style="float:right">@Html.ActionLink("[返回]","Index","Products")</p>
+</div>

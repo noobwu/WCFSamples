@@ -1,0 +1,3 @@
+1.在IIS创建一个名为VMServices应用，并将物理目录映射为\Services；
+2.数据库文件在目录下Database Files；
+3.在部署数据库之后，对\Services\Web.config中的连接字符串配置作相应的修改。

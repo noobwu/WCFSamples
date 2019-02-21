@@ -1,0 +1,1978 @@
+﻿----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 2:23:53 AM
+Message: HandlingInstanceID: ee8e010c-144b-4dc5-bfa3-8d97f1767518
+An exception of type 'Artech.VideoMall.Orders.BusinessEntity.OrdersException' occurred and was caught.
+------------------------------------------------------------------------------------------------------
+01/03/2012 10:23:53
+Type : Artech.VideoMall.Orders.BusinessEntity.OrdersException, Artech.VideoMall.Orders.BusinessEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Message : 库存不足[ID:02E2DE63-4B1C-4510-A997-0AA9A2E4621D]
+Source : Artech.VideoMall.Common
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleException(System.Exception, System.ServiceModel.ICommunicationObject)
+Stack Trace :    at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 60
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne](Action`1 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 25
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke(Action`1 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 24
+   at Artech.VideoMall.Orders.OrdersProxy.Submit(Order order) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Orders\Orders\OrdersProxy.cs:line 13
+   at Artech.VideoMall.Controllers.OrdersController.CheckOut() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\OrdersController.cs:line 69
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 2:23:53 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=a20767533a162583
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-7-129700310251569969
+ThreadIdentity : Artech
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-7-129700310251569969
+ProcessId: 3984
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:4116
+Extended Properties: 
+    ProcessId=3984
+    LogicalOperationStack=
+    ThreadId=36
+    DateTime=2012-01-03T02:23:53.0684314Z
+    Timestamp=22471768229
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 195
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 92
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\Logging\Src\Logging\LogSource.cs:line 180
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 557
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 764
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 742
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 116
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 86
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 84
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in D:\iConnect.NET\SZ-IC-R2-TFS10\iConnect44\Enterprise Library 50\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 56
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\IoC\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 2:34:13 AM
+Message: HandlingInstanceID: d7c4f8dd-0a43-4814-b197-46631c750359
+An exception of type 'Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionHandlingException' occurred and was caught.
+----------------------------------------------------------------------------------------------------------------------------------
+01/03/2012 10:34:13
+Type : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionHandlingException, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+Message : The type 'Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging' cannot be resolved. Please verify the spelling is correct or that the full type name is provided.
+Source : Artech.VideoMall.Common
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleException(System.Exception, System.ServiceModel.ICommunicationObject)
+Stack Trace :    at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 60
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne](Action`1 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 25
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke(Action`1 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 24
+   at Artech.VideoMall.Orders.OrdersProxy.Submit(Order order) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Orders\Orders\OrdersProxy.cs:line 13
+   at Artech.VideoMall.Controllers.OrdersController.CheckOut() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\OrdersController.cs:line 69
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 2:34:13 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-12-129700316149767965
+ThreadIdentity : Artech
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+	Inner Exception
+	---------------
+	Type : System.ArgumentException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : The type 'Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging' cannot be resolved. Please verify the spelling is correct or that the full type name is provided.
+	Source : 
+	Help link : 
+	ParamName : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : 
+	Stack Trace : The stack trace is unavailable.
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-12-129700316149767965
+ProcessId: 3984
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:2064
+Extended Properties: 
+    ProcessId=3984
+    LogicalOperationStack=
+    ThreadId=9
+    DateTime=2012-01-03T02:34:13.9117713Z
+    Timestamp=24165131557
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log)
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData)
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId)
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID)
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle)
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle)
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName)
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\IoC\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 2:36:49 AM
+Message: HandlingInstanceID: 7b44cb02-3c4a-439b-b1aa-67c71fe9d636
+An exception of type 'Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionHandlingException' occurred and was caught.
+----------------------------------------------------------------------------------------------------------------------------------
+01/03/2012 10:36:49
+Type : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionHandlingException, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+Message : The type 'Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging' cannot be resolved. Please verify the spelling is correct or that the full type name is provided.
+Source : Artech.VideoMall.Common
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleException(System.Exception, System.ServiceModel.ICommunicationObject)
+Stack Trace :    at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 60
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne](Action`1 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 25
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke(Action`1 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 24
+   at Artech.VideoMall.Orders.OrdersProxy.Submit(Order order) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Orders\Orders\OrdersProxy.cs:line 13
+   at Artech.VideoMall.Controllers.OrdersController.CheckOut() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\OrdersController.cs:line 69
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 2:36:49 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-14-129700317582197421
+ThreadIdentity : Artech
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+	Inner Exception
+	---------------
+	Type : System.ArgumentException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : The type 'Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging' cannot be resolved. Please verify the spelling is correct or that the full type name is provided.
+	Source : 
+	Help link : 
+	ParamName : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : 
+	Stack Trace : The stack trace is unavailable.
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-14-129700317582197421
+ProcessId: 3984
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:7212
+Extended Properties: 
+    ProcessId=3984
+    LogicalOperationStack=
+    ThreadId=13
+    DateTime=2012-01-03T02:36:49.0944691Z
+    Timestamp=24588395961
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log)
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData)
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId)
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID)
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle)
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle)
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName)
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 3:29:12 AM
+Message: HandlingInstanceID: 708e9d30-fccf-450d-b289-b6f46b5b00fe
+An exception of type 'Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionHandlingException' occurred and was caught.
+----------------------------------------------------------------------------------------------------------------------------------
+01/03/2012 11:29:12
+Type : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionHandlingException, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+Message : The type 'Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler,Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging' cannot be resolved. Please verify the spelling is correct or that the full type name is provided.
+Source : Artech.VideoMall.Common
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleException(System.Exception, System.ServiceModel.ICommunicationObject)
+Stack Trace :    at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 60
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne](Action`1 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 25
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke(Action`1 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 24
+   at Artech.VideoMall.Orders.OrdersProxy.Submit(Order order) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Orders\Orders\OrdersProxy.cs:line 13
+   at Artech.VideoMall.Controllers.OrdersController.CheckOut() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\OrdersController.cs:line 69
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 3:29:12 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-15-129700348938510662
+ThreadIdentity : Artech
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+	Inner Exception
+	---------------
+	Type : System.ArgumentException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : The type 'Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler,Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging' cannot be resolved. Please verify the spelling is correct or that the full type name is provided.
+	Source : 
+	Help link : 
+	ParamName : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : 
+	Stack Trace : The stack trace is unavailable.
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-15-129700348938510662
+ProcessId: 5332
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:3540
+Extended Properties: 
+    ProcessId=5332
+    LogicalOperationStack=
+    ThreadId=30
+    DateTime=2012-01-03T03:29:13.0213511Z
+    Timestamp=3752868367
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 203
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 93
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogSource.cs:line 178
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 553
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 765
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 773
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 117
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 84
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 56
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 4:17:57 AM
+Message: HandlingInstanceID: 467ad843-d45a-4872-92df-4ae9ae834aac
+An exception of type 'Artech.VideoMall.Orders.BusinessEntity.OrdersException' occurred and was caught.
+------------------------------------------------------------------------------------------------------
+01/03/2012 12:17:57
+Type : Artech.VideoMall.Orders.BusinessEntity.OrdersException, Artech.VideoMall.Orders.BusinessEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Message : 库存不足[ID:02E2DE63-4B1C-4510-A997-0AA9A2E4621D]
+Source : Artech.VideoMall.Common
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleException(System.Exception, System.ServiceModel.ICommunicationObject)
+Stack Trace :    at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 60
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne](Action`1 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 25
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke(Action`1 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 24
+   at Artech.VideoMall.Orders.OrdersProxy.Submit(Order order) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Orders\Orders\OrdersProxy.cs:line 13
+   at Artech.VideoMall.Controllers.OrdersController.CheckOut() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\OrdersController.cs:line 69
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 4:17:57 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-1-129700378413434700
+ThreadIdentity : Artech
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-1-129700378413434700
+ProcessId: 5264
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:5180
+Extended Properties: 
+    ProcessId=5264
+    LogicalOperationStack=
+    ThreadId=5
+    DateTime=2012-01-03T04:17:57.6851212Z
+    Timestamp=11729977213
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 203
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 93
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogSource.cs:line 178
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 553
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 765
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 773
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 117
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 81
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 55
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 4:19:15 AM
+Message: HandlingInstanceID: ea754303-d782-4729-a46c-ef9c1291a748
+An exception of type 'Artech.VideoMall.Orders.BusinessEntity.OrdersException' occurred and was caught.
+------------------------------------------------------------------------------------------------------
+01/03/2012 12:19:15
+Type : Artech.VideoMall.Orders.BusinessEntity.OrdersException, Artech.VideoMall.Orders.BusinessEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Message : 库存不足[ID:02E2DE63-4B1C-4510-A997-0AA9A2E4621D]
+Source : Artech.VideoMall.Common
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleException(System.Exception, System.ServiceModel.ICommunicationObject)
+Stack Trace :    at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 60
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne](Action`1 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 25
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke(Action`1 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 24
+   at Artech.VideoMall.Orders.OrdersProxy.Submit(Order order) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Orders\Orders\OrdersProxy.cs:line 13
+   at Artech.VideoMall.Controllers.OrdersController.CheckOut() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\OrdersController.cs:line 69
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 4:19:15 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-3-129700379347950891
+ThreadIdentity : Artech
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-3-129700379347950891
+ProcessId: 5264
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:4468
+Extended Properties: 
+    ProcessId=5264
+    LogicalOperationStack=
+    ThreadId=17
+    DateTime=2012-01-03T04:19:15.2065999Z
+    Timestamp=11941417137
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 195
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 93
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogSource.cs:line 180
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 557
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 765
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 773
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 117
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 84
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 56
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 4:24:25 AM
+Message: HandlingInstanceID: 044378e4-54a4-4b23-8874-79dcc7ff7750
+An exception of type 'System.TimeoutException' occurred and was caught.
+-----------------------------------------------------------------------
+01/03/2012 12:24:25
+Type : System.TimeoutException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The request channel timed out while waiting for a reply after 00:01:00. Increase the timeout value passed to the call to Request or increase the SendTimeout value on the Binding. The time allotted to this operation may have been a portion of a longer timeout.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+Stack Trace : 
+Server stack trace: 
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ClientReliableChannelBinder`1.RequestClientReliableChannelBinder`1.OnRequest(TRequestChannel channel, Message message, TimeSpan timeout, MaskingMode maskingMode)
+   at System.ServiceModel.Channels.ClientReliableChannelBinder`1.Request(Message message, TimeSpan timeout, MaskingMode maskingMode)
+   at System.ServiceModel.Channels.ClientReliableChannelBinder`1.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Security.SecuritySessionClientSettings`1.SecurityRequestSessionChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 60
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne,TResult](Func`2 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 42
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke[TResult](Func`2 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 31
+   at Artech.VideoMall.Products.ProductsProxy.GetAllMovies() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Products\Products\ProductsProxy.cs:line 15
+
+Exception rethrown at [1]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Artech.VideoMall.Products.Service.Interface.IProductsService.GetAllMovies()
+   at Artech.VideoMall.Controllers.ProductsController.Index() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\ProductsController.cs:line 15
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 4:24:25 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-4-129700381578899393
+ThreadIdentity : 
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+	Inner Exception
+	---------------
+	Type : System.TimeoutException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : The HTTP request to 'http://localhost/VMServices/Products/ProductsService.svc' has exceeded the allotted timeout of 00:01:00. The time allotted to this operation may have been a portion of a longer timeout.
+	Source : System.ServiceModel
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : System.Net.HttpWebResponse ProcessGetResponseWebException(System.Net.WebException, System.Net.HttpWebRequest, System.ServiceModel.Channels.HttpAbortReason)
+	Stack Trace :    at System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+	   at System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+	   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+
+		Inner Exception
+		---------------
+		Type : System.Net.WebException, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+		Message : The operation has timed out
+		Source : System
+		Help link : 
+		Status : Timeout
+		Response : 
+		Data : System.Collections.ListDictionaryInternal
+		TargetSite : System.Net.WebResponse GetResponse()
+		Stack Trace :    at System.Net.HttpWebRequest.GetResponse()
+		   at System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-4-129700381578899393
+ProcessId: 5264
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:4776
+Extended Properties: 
+    ProcessId=5264
+    LogicalOperationStack=
+    ThreadId=6
+    DateTime=2012-01-03T04:24:25.6598995Z
+    Timestamp=12788209912
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 203
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 93
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogSource.cs:line 178
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 553
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 765
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 773
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 117
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 81
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 55
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 4:24:43 AM
+Message: HandlingInstanceID: fd550044-4ca7-4fa7-abe8-be8ef91a2828
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+01/03/2012 12:24:43
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Constructor on type 'System.Data.SqlClient.SqlException' not found.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+Stack Trace : 
+Server stack trace: 
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.GetException(ServiceExceptionDetail exceptionDetail) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 68
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 58
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne,TResult](Func`2 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 42
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke[TResult](Func`2 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 31
+   at Artech.VideoMall.Products.ProductsProxy.GetAllMovies() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Products\Products\ProductsProxy.cs:line 15
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Artech.VideoMall.Products.Service.Interface.IProductsService.GetAllMovies()
+   at Artech.VideoMall.Controllers.ProductsController.Index() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\ProductsController.cs:line 15
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 4:24:43 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-6-129700382704545616
+ThreadIdentity : 
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-6-129700382704545616
+ProcessId: 5264
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:5180
+Extended Properties: 
+    ProcessId=5264
+    LogicalOperationStack=
+    ThreadId=5
+    DateTime=2012-01-03T04:24:43.2490087Z
+    Timestamp=12836161846
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 203
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 93
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogSource.cs:line 178
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 553
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 765
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 773
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 117
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 81
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 55
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 4:34:43 AM
+Message: HandlingInstanceID: 522005c6-fc32-437f-ac4b-23b8ead0ecd2
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+01/03/2012 12:34:43
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Constructor on type 'System.Data.SqlClient.SqlException' not found.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+Stack Trace : 
+Server stack trace: 
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.GetException(ServiceExceptionDetail exceptionDetail) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 68
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 58
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne,TResult](Func`2 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 42
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke[TResult](Func`2 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 31
+   at Artech.VideoMall.Products.ProductsProxy.GetAllMovies() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Products\Products\ProductsProxy.cs:line 15
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Artech.VideoMall.Products.Service.Interface.IProductsService.GetAllMovies()
+   at Artech.VideoMall.Controllers.ProductsController.Index() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\ProductsController.cs:line 15
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 4:34:43 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-8-129700388665796565
+ThreadIdentity : 
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-8-129700388665796565
+ProcessId: 5264
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:5776
+Extended Properties: 
+    ProcessId=5264
+    LogicalOperationStack=
+    ThreadId=29
+    DateTime=2012-01-03T04:34:43.7301198Z
+    Timestamp=14473987451
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 203
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 93
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogSource.cs:line 178
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 553
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 765
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 773
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 117
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 81
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 55
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 4:38:33 AM
+Message: HandlingInstanceID: a9dd67a2-4dbd-4ddb-804d-fc5e2da4e916
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+01/03/2012 12:38:33
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Constructor on type 'System.Data.SqlClient.SqlException' not found.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+Stack Trace : 
+Server stack trace: 
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.GetException(ServiceExceptionDetail exceptionDetail) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 68
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 58
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne,TResult](Func`2 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 42
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke[TResult](Func`2 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 31
+   at Artech.VideoMall.Products.ProductsProxy.GetAllMovies() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Products\Products\ProductsProxy.cs:line 15
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Artech.VideoMall.Products.Service.Interface.IProductsService.GetAllMovies()
+   at Artech.VideoMall.Controllers.ProductsController.Index() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\ProductsController.cs:line 15
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 4:38:33 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-10-129700390667561234
+ThreadIdentity : 
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-10-129700390667561234
+ProcessId: 5264
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:1412
+Extended Properties: 
+    ProcessId=5264
+    LogicalOperationStack=
+    ThreadId=19
+    DateTime=2012-01-03T04:38:33.5784562Z
+    Timestamp=15100903234
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 203
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 93
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogSource.cs:line 178
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 553
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 765
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 773
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 117
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 81
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 55
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 4:43:09 AM
+Message: HandlingInstanceID: 41ebf117-147e-4f15-abd0-fd49c2a95235
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+01/03/2012 12:43:09
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Constructor on type 'System.Data.SqlClient.SqlException' not found.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+Stack Trace : 
+Server stack trace: 
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.GetException(ServiceExceptionDetail exceptionDetail) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 68
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 58
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne,TResult](Func`2 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 42
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke[TResult](Func`2 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 31
+   at Artech.VideoMall.Products.ProductsProxy.GetAllMovies() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Products\Products\ProductsProxy.cs:line 15
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Artech.VideoMall.Products.Service.Interface.IProductsService.GetAllMovies()
+   at Artech.VideoMall.Controllers.ProductsController.Index() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\ProductsController.cs:line 15
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 4:43:09 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-12-129700393314070358
+ThreadIdentity : 
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-12-129700393314070358
+ProcessId: 5264
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:5776
+Extended Properties: 
+    ProcessId=5264
+    LogicalOperationStack=
+    ThreadId=29
+    DateTime=2012-01-03T04:43:09.2456101Z
+    Timestamp=15852791614
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 203
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 93
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogSource.cs:line 178
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 553
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 765
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 773
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 117
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 81
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 55
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 4:43:30 AM
+Message: HandlingInstanceID: d2080311-c53b-4a38-8d37-3d5c37994ce0
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+01/03/2012 12:43:30
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Constructor on type 'System.Data.SqlClient.SqlException' not found.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+Stack Trace : 
+Server stack trace: 
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.GetException(ServiceExceptionDetail exceptionDetail) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 68
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 58
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne,TResult](Func`2 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 42
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke[TResult](Func`2 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 31
+   at Artech.VideoMall.Products.ProductsProxy.GetAllMovies() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Products\Products\ProductsProxy.cs:line 15
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Artech.VideoMall.Products.Service.Interface.IProductsService.GetAllMovies()
+   at Artech.VideoMall.Controllers.ProductsController.Index() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\ProductsController.cs:line 15
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 4:43:30 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-12-129700393314070358
+ThreadIdentity : 
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-12-129700393314070358
+ProcessId: 5264
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:5960
+Extended Properties: 
+    ProcessId=5264
+    LogicalOperationStack=
+    ThreadId=27
+    DateTime=2012-01-03T04:43:30.7078005Z
+    Timestamp=15911330522
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 203
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 93
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogSource.cs:line 178
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 553
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 765
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 773
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 117
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 81
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 55
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 4:52:41 AM
+Message: HandlingInstanceID: 508eba14-11ff-40ed-815e-70280403f60e
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+01/03/2012 12:52:41
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Constructor on type 'System.Data.SqlClient.SqlException' not found.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+Stack Trace : 
+Server stack trace: 
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.GetException(ServiceExceptionDetail exceptionDetail) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 68
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 58
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne,TResult](Func`2 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 42
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke[TResult](Func`2 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 31
+   at Artech.VideoMall.Products.ProductsProxy.GetAllMovies() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Products\Products\ProductsProxy.cs:line 15
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Artech.VideoMall.Products.Service.Interface.IProductsService.GetAllMovies()
+   at Artech.VideoMall.Controllers.ProductsController.Index() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\ProductsController.cs:line 15
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 4:52:41 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-13-129700399160774877
+ThreadIdentity : 
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-13-129700399160774877
+ProcessId: 5264
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:3308
+Extended Properties: 
+    ProcessId=5264
+    LogicalOperationStack=
+    ThreadId=9
+    DateTime=2012-01-03T04:52:41.8607049Z
+    Timestamp=17414612284
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 203
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 93
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogSource.cs:line 178
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 553
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 765
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 773
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 117
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 81
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 55
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 4:56:46 AM
+Message: HandlingInstanceID: 07217cb4-b01e-41ec-827b-0da15b98e532
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+01/03/2012 12:56:46
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Constructor on type 'System.Data.SqlClient.SqlException' not found.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+Stack Trace : 
+Server stack trace: 
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.GetException(ServiceExceptionDetail exceptionDetail) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 68
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 58
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne,TResult](Func`2 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 42
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke[TResult](Func`2 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 31
+   at Artech.VideoMall.Products.ProductsProxy.GetAllMovies() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Products\Products\ProductsProxy.cs:line 15
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at Artech.VideoMall.Products.Service.Interface.IProductsService.GetAllMovies()
+   at Artech.VideoMall.Controllers.ProductsController.Index() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\ProductsController.cs:line 15
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 4:56:46 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-14-129700401927170800
+ThreadIdentity : 
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-14-129700401927170800
+ProcessId: 5264
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:5784
+Extended Properties: 
+    ProcessId=5264
+    LogicalOperationStack=
+    ThreadId=6
+    DateTime=2012-01-03T04:56:46.8390767Z
+    Timestamp=18082795587
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 203
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 93
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogSource.cs:line 178
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 553
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 765
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 773
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 117
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 81
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 55
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 4:58:00 AM
+Message: HandlingInstanceID: 11c766ad-7282-4e81-a07a-37dabe08e480
+An exception of type 'Artech.VideoMall.Orders.BusinessEntity.OrdersException' occurred and was caught.
+------------------------------------------------------------------------------------------------------
+01/03/2012 12:58:00
+Type : Artech.VideoMall.Orders.BusinessEntity.OrdersException, Artech.VideoMall.Orders.BusinessEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Message : 库存不足[ID:02E2DE63-4B1C-4510-A997-0AA9A2E4621D]
+Source : Artech.VideoMall.Common
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void HandleException(System.Exception, System.ServiceModel.ICommunicationObject)
+Stack Trace :    at Artech.VideoMall.Common.Extensions.OperationInvoker.HandleException(Exception ex, ICommunicationObject channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 60
+   at Artech.VideoMall.Common.Extensions.OperationInvoker.Invoke[TChanne](Action`1 serviceInvocation, TChanne channel) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker.cs:line 25
+   at Artech.VideoMall.Common.Extensions.OperationInvoker`1.Invoke(Action`1 serviceInvocation) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\Exception Handling\OperationInvoker~1.cs:line 24
+   at Artech.VideoMall.Orders.OrdersProxy.Submit(Order order) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Modules\Orders\Orders\OrdersProxy.cs:line 13
+   at Artech.VideoMall.Controllers.OrdersController.CheckOut() in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Controllers\OrdersController.cs:line 69
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 4:58:00 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-16-129700402504651154
+ThreadIdentity : Artech
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-16-129700402504651154
+ProcessId: 5264
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:2632
+Extended Properties: 
+    ProcessId=5264
+    LogicalOperationStack=
+    ThreadId=32
+    DateTime=2012-01-03T04:58:00.5654558Z
+    Timestamp=18283886496
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 195
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 93
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogSource.cs:line 180
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 557
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 765
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 773
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 117
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 84
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 56
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------
+----------------------------------------
+Exception Error: 100 : Timestamp: 1/3/2012 5:52:42 AM
+Message: HandlingInstanceID: 2cbc4f22-5b5e-4ee8-8308-2800eef49a22
+An exception of type 'System.Web.HttpCompileException' occurred and was caught.
+-------------------------------------------------------------------------------
+01/03/2012 13:52:42
+Type : System.Web.HttpCompileException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\videomall\abc7d397\187f83ac\App_Web_shoppingcart.cshtml.8c32f4cc.ixlasiud.0.cs(29): error CS0246: The type or namespace name 'ShoppingCartEntry' could not be found (are you missing a using directive or an assembly reference?)
+Source : System.Web
+Help link : 
+Results : System.CodeDom.Compiler.CompilerResults
+SourceCode : #pragma checksum "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml" "{406ea660-64cf-4c82-b6f0-42d48172a799}" "26D684B36F74E1C6EF4F4BBA16E1AFE2"
+//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//     Runtime Version:4.0.30319.239
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+namespace ASP {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Linq;
+    using System.Net;
+    using System.Web;
+    using System.Web.Helpers;
+    using System.Web.Security;
+    using System.Web.UI;
+    using System.Web.WebPages;
+    using System.Web.Mvc;
+    using System.Web.Mvc.Ajax;
+    using System.Web.Mvc.Html;
+    using System.Web.Routing;
+    
+    
+    public class _Page_Views_Orders_ShoppingCart_cshtml : System.Web.Mvc.WebViewPage<ShoppingCartEntry[]> {
+        
+#line hidden
+
+        
+        public _Page_Views_Orders_ShoppingCart_cshtml() {
+        }
+        
+        protected ASP.global_asax ApplicationInstance {
+            get {
+                return ((ASP.global_asax)(Context.ApplicationInstance));
+            }
+        }
+        
+        public override void Execute() {
+
+
+            
+            #line 2 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+  
+    ViewBag.Title = "AddProductIntoCart";
+
+
+            
+            #line default
+            #line hidden
+WriteLiteral("<div class=\"shoppingCart\">\r\n    <table  cellspacing=\"0\">\r\n        <tr>\r\n         " +
+"   <th>片名</th>\r\n            <th>单价</th>\r\n            <th>数量</th>\r\n            <t" +
+"h>金额</th>\r\n            <th></th></tr>\r\n");
+
+
+            
+            #line 13 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+         foreach (ShoppingCartEntry entry in this.Model)
+        {
+            decimal subTotle = entry.Quantity * entry.Price;
+
+            
+            #line default
+            #line hidden
+WriteLiteral("            <tr>\r\n                <td>");
+
+
+            
+            #line 17 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+               Write(entry.ProductName);
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</td>\r\n                <td>￥");
+
+
+            
+            #line 18 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+                Write(entry.Price);
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</td>\r\n                <td>");
+
+
+            
+            #line 19 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+               Write(entry.Quantity);
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</td>\r\n                <td>￥");
+
+
+            
+            #line 20 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+                Write(subTotle);
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</td>\r\n                <td>\r\n");
+
+
+            
+            #line 22 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+                 using (Html.BeginForm("RemoveProductFromCart", "Orders"))
+                {       
+                        
+            
+            #line default
+            #line hidden
+            
+            #line 24 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+                   Write(Html.Hidden("productId", entry.ProductId));
+
+            
+            #line default
+            #line hidden
+            
+            #line 24 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+                                                                  
+
+            
+            #line default
+            #line hidden
+WriteLiteral("                        <input type=\"submit\" value=\"\" class=\"remove\" />          " +
+"          \r\n");
+
+
+            
+            #line 26 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+                }
+
+            
+            #line default
+            #line hidden
+WriteLiteral("                </td>\r\n            </tr>\r\n");
+
+
+            
+            #line 29 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+        }
+
+            
+            #line default
+            #line hidden
+WriteLiteral("        <tr>\r\n            <td colspan=\"3\"></td>\r\n            <td><b>总价：￥");
+
+
+            
+            #line 32 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+                  Write(Artech.VideoMall.Models.ShoppingCart.Current.TotalPrice);
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</b></td>\r\n            <td></td>\r\n        </tr>\r\n    </table>\r\n    <div>\r\n       " +
+" <ul>\r\n            <li> \r\n                <img src=\"");
+
+
+            
+            #line 39 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+                     Write(Url.Content("~/Content/images/continueshopping.jpg"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\" alt=\"\"/>\r\n                ");
+
+
+            
+            #line 40 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+           Write(Html.ActionLink("继续购物","Index","Products"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</li>\r\n");
+
+
+            
+            #line 41 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+                 if (Artech.VideoMall.Models.ShoppingCart.Current.TotalQuantity > 0)
+                {
+
+            
+            #line default
+            #line hidden
+WriteLiteral("                   <li> \r\n                       <img src=\"");
+
+
+            
+            #line 44 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+                            Write(Url.Content("~/Content/images/payment.jpg"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\" alt=\"\" /> \r\n                       ");
+
+
+            
+            #line 45 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+                  Write(Html.ActionLink("结帐支付", "CheckOut", "Orders"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\r\n                  </li>\r\n");
+
+
+            
+            #line 47 "E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\VideoMall\Views\Orders\ShoppingCart.cshtml"
+                }
+
+            
+            #line default
+            #line hidden
+WriteLiteral("        </ul>        \r\n    </div>\r\n</div>\r\n");
+
+
+        }
+    }
+}
+
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.CodeDom.Compiler.CompilerResults Compile()
+Stack Trace :    at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   at System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+Additional Info:
+
+MachineName : NCS-SZ-JINNAN
+TimeStamp : 1/3/2012 5:52:42 AM
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : /LM/W3SVC/1/ROOT/VideoMall-30-129700435501368725
+ThreadIdentity : 
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+
+Category: Exception
+Priority: 0
+EventId: 100
+Severity: Error
+Title:Enterprise Library Exception Handling
+Machine: NCS-SZ-JINNAN
+App Domain: /LM/W3SVC/1/ROOT/VideoMall-30-129700435501368725
+ProcessId: 5264
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+Thread Name: 
+Win32 ThreadId:2280
+Extended Properties: 
+    ProcessId=5264
+    LogicalOperationStack=
+    ThreadId=27
+    DateTime=2012-01-03T05:52:42.1611068Z
+    Timestamp=27234510382
+    Callstack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Diagnostics.TraceEventCache.get_Callstack()
+   at System.Diagnostics.TraceListener.WriteFooter(TraceEventCache eventCache)
+   at System.Diagnostics.TraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedTextWriterTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FormattedTextWriterTraceListener.cs:line 203
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\FlatFileTraceListener.cs:line 210
+   at Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.TraceListenerWrapper.TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, Int32 id, Object data) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\TraceListeners\TraceListenerWrapper.cs:line 93
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogSource.TraceData(TraceEventType eventType, Int32 id, LogEntry logEntry, TraceListenerFilter traceListenerFilter, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogSource.cs:line 178
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.ProcessLog(LogEntry log, TraceEventCache traceEventCache) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 553
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.<>c__DisplayClass1.<Write>b__0() in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 765
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LoggingUpdateCoordinator.ExecuteReadOperation(Action action) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LoggingUpdateCoordinator.cs:line 112
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterImpl.Write(LogEntry log) in e:\Builds\EntLib\Latest\Source\Blocks\Logging\Src\Logging\LogWriterImpl.cs:line 773
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.WriteToLog(String logMessage, IDictionary exceptionData) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 117
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler.HandleException(Exception exception, Guid handlingInstanceId) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\Logging\LoggingExceptionHandler.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.ExecuteHandlerChain(Exception ex, Guid handlingInstanceID) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 133
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyEntry.Handle(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyEntry.cs:line 87
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicyImpl.HandleException(Exception exceptionToHandle) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicyImpl.cs:line 81
+   at Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.ExceptionPolicy.HandleException(Exception exceptionToHandle, String policyName) in e:\Builds\EntLib\Latest\Source\Blocks\ExceptionHandling\Src\ExceptionHandling\ExceptionPolicy.cs:line 55
+   at Artech.VideoMall.Common.Extensions.ExtendedController.OnException(ExceptionContext filterContext) in E:\WCF技术剖析\WCF技术剖析（卷1）（修订版）\Samples\Chapter 10\VideoMall\Common\BaseClasses\ExtendedController.cs:line 38
+   at System.Web.Mvc.Controller.System.Web.Mvc.IExceptionFilter.OnException(ExceptionContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeExceptionFilters(ControllerContext controllerContext, IList`1 filters, Exception exception)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass6.<>c__DisplayClassb.<BeginProcessRequest>b__5()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClasse.<EndProcessRequest>b__d()
+   at System.Web.Mvc.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+   at System.Web.HttpApplication.PipelineStepManager.ResumeSteps(Exception error)
+   at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.UnsafeIISMethods.MgdIndicateCompletion(IntPtr pHandler, RequestNotificationStatus& notificationStatus)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+   at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)
+----------------------------------------

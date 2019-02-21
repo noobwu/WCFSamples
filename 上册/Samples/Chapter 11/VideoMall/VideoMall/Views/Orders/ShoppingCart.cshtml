@@ -1,0 +1,51 @@
+﻿@using Artech.VideoMall.Models
+@model ShoppingCartEntry[]
+@{
+    ViewBag.Title = "AddProductIntoCart";
+}
+<div class="shoppingCart">
+    <table  cellspacing="0">
+        <tr>
+            <th>片名</th>
+            <th>单价</th>
+            <th>数量</th>
+            <th>金额</th>
+            <th></th></tr>
+        @foreach (ShoppingCartEntry entry in this.Model)
+        {
+            decimal subTotle = entry.Quantity * entry.Price;
+            <tr>
+                <td>@entry.ProductName</td>
+                <td>￥@entry.Price</td>
+                <td>@entry.Quantity</td>
+                <td>￥@subTotle</td>
+                <td>
+                @using (Html.BeginForm("RemoveProductFromCart", "Orders"))
+                {       
+                        @Html.Hidden("productId", entry.ProductId)
+                        <input type="submit" value="" class="remove" />                    
+                }
+                </td>
+            </tr>
+        }
+        <tr>
+            <td colspan="3"></td>
+            <td><b>总价：￥@Artech.VideoMall.Models.ShoppingCart.Current.TotalPrice</b></td>
+            <td></td>
+        </tr>
+    </table>
+    <div>
+        <ul>
+            <li> 
+                <img src="@Url.Content("~/Content/images/continueshopping.jpg")" alt=""/>
+                @Html.ActionLink("继续购物","Index","Products")</li>
+                @if (Artech.VideoMall.Models.ShoppingCart.Current.TotalQuantity > 0)
+                {
+                   <li> 
+                       <img src="@Url.Content("~/Content/images/payment.jpg")" alt="" /> 
+                       @Html.ActionLink("结帐支付", "CheckOut", "Orders")
+                  </li>
+                }
+        </ul>        
+    </div>
+</div>
